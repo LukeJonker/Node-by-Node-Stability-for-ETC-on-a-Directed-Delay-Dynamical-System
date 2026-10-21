@@ -23,11 +23,8 @@ Define the ETC as follows for each control independantly:
 $$
 \begin{aligned}
 &\text{ETC Sampling Error:} \quad \epsilon_i(t) := x_i(t_k) - x_i(t), \quad t \in [t_{ik}, t_{ik+1}), \quad \text{for } k\in \mathbb{N}  \\
-
 & \text{Error Measure:} \quad \mathcal C_i (x_i(t), \epsilon_i(t)) := 2x_i^T P_iK_i\epsilon_i(t)- \sigma_i x_i^T P_i x_i \\
-
 & \text{Event Threshold:} \quad \zeta_i := \alpha_i \exp({-\beta_i (t- t_0)}) \\
-
 & \text{Event Subsequence:} \quad t_{ik+1} := \inf\{t_i \gt t_{ik} : \mathcal C_i(x_i(t),\epsilon_i(t)) \ge \zeta_i(t)\}
 \end{aligned}
 $$
@@ -106,7 +103,6 @@ $$
 \Lambda_{[i]} := \{\lambda_i : i \in [i] \}   \cup
 \{\beta_i : \alpha_i > 0, i \in [i]\},
 \quad \Lambda_{[i]}^* := \min \Lambda_{[i]} \cup \bigcup_{j \in \mathcal R([i])} \Lambda_{[j]} , \quad
-
  \bar M_i^* := \max  \bar M_i \cup \bigcup_{j \in \mathcal R(i)} \bar M_j
 $$
 
